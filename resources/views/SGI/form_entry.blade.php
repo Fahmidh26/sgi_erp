@@ -78,69 +78,7 @@
                     </form>
                 </div>
                 <div class="d-none code-view">
-{{-- <pre class="language-markup" style="height: 275px">
-<code>&lt;form action=&quot;#&quot;&gt;
-&lt;div class=&quot;row g-3&quot;&gt;
-&lt;div class=&quot;col-lg-6&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;firstnamefloatingInput&quot; placeholder=&quot;Enter your firstname&quot;&gt;
-&lt;label for=&quot;firstnamefloatingInput&quot;&gt;First Name&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-6&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;lastnamefloatingInput&quot; placeholder=&quot;Enter your Lastname&quot;&gt;
-&lt;label for=&quot;lastnamefloatingInput&quot;&gt;Last Name&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-4&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;emailfloatingInput&quot; placeholder=&quot;Enter your email&quot;&gt;
-&lt;label for=&quot;emailfloatingInput&quot;&gt;Email Address&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-4&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;passwordfloatingInput&quot; placeholder=&quot;Enter your password&quot;&gt;
-&lt;label for=&quot;passwordfloatingInput&quot;&gt;Password&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-4&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;passwordfloatingInput1&quot; placeholder=&quot;Confirm password&quot;&gt;
-&lt;label for=&quot;passwordfloatingInput1&quot;&gt;Confirm Password&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-4&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;cityfloatingInput&quot; placeholder=&quot;Enter your city&quot;&gt;
-&lt;label for=&quot;cityfloatingInput&quot;&gt;City&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-4&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;select class=&quot;form-select&quot; id=&quot;floatingSelect&quot; aria-label=&quot;Floating label select example&quot;&gt;
-&lt;option selected&gt;USA&lt;/option&gt;
-&lt;option value=&quot;1&quot;&gt;Brazil&lt;/option&gt;
-&lt;option value=&quot;2&quot;&gt;France&lt;/option&gt;
-&lt;option value=&quot;3&quot;&gt;Germany&lt;/option&gt;
-&lt;/select&gt;
-&lt;label for=&quot;floatingSelect&quot;&gt;Country&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-4&quot;&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;number&quot; class=&quot;form-control&quot; id=&quot;zipfloatingInput&quot; placeholder=&quot;Enter your zipcode&quot;&gt;
-&lt;label for=&quot;zipfloatingInput&quot;&gt;Zipcode&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-lg-12&quot;&gt;
-&lt;div class=&quot;text-end&quot;&gt;
-&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/form&gt;</code></pre> --}}
+
                 </div>
             </div>
         </div>
