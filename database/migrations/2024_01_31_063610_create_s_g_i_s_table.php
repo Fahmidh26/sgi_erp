@@ -16,13 +16,13 @@ return new class extends Migration
             $table->string('company_name');
             $table->string('month');
             $table->integer('year');
-            $table->string('details');
-            $table->float('total_sale');
-            $table->float('total_expenditure');
-            $table->float('total_customer_due');
-            $table->float('current_balance');
+            $table->string('details')->nullable();
+            $table->float('total_sale')->nullable();
+            $table->float('total_expenditure')->nullable();
+            $table->float('total_customer_due')->nullable();
+            $table->float('current_balance')->nullable();
             $table->integer('made_by');
-            $table->integer('updated_by');
+            $table->integer('updated_by')->nullable();
             $table->timestamps();
         });
     }
