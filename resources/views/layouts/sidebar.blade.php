@@ -60,12 +60,12 @@
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarApps">
-                        <i class="lab la-delicious"></i> <span >@lang('translation.apps')</span>
+                        <i class="lab la-delicious"></i> <span >Data Entry</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link" >@lang('translation.calendar')</a>
+                                <a href="{{route('dataentry.add')}}" class="nav-link" >STATA Entry</a>
                             </li>
                             <li class="nav-item">
                                 <a href="apps-chat" class="nav-link" >@lang('translation.chat')</a>
