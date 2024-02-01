@@ -7,73 +7,112 @@
 @endcomponent
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-8">
         <div class="card">
            
             <div class="card-body">
                
                 <div class="live-preview">
-                    <form action="#">
+                    <form class="insert-form" id="insert_form" method="post" action="{{ route('dataentry.store')}}">
+                        @csrf
                         <div class="row g-3">
-                            <div class="col-lg-6">
+
+                            <div class="col-lg-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="firstnamefloatingInput" placeholder="Enter your firstname">
-                                    <label for="firstnamefloatingInput">First Name</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="lastnamefloatingInput" placeholder="Enter your Lastname">
-                                    <label for="lastnamefloatingInput">Last Name</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="emailfloatingInput" placeholder="Enter your email">
-                                    <label for="emailfloatingInput">Email Address</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="passwordfloatingInput" placeholder="Enter your password">
-                                    <label for="passwordfloatingInput">Password</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="passwordfloatingInput1" placeholder="Confirm password">
-                                    <label for="passwordfloatingInput1">Confirm Password</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cityfloatingInput" placeholder="Enter your city">
-                                    <label for="cityfloatingInput">City</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                      <option selected>Choose...</option>
-                                      <option value="1">USA</option>
-                                      <option value="2">Brazil</option>
-                                      <option value="3">France</option>
-                                      <option value="4">Germany</option>
+                                    <select class="form-select" id="company_name" name="company_name" required>
+                                        <option selected>Choose...</option>
+                                        <option value="STATA">STATA</option>
+                                        <option value="STATA IT">STATA IT</option>
+                                        <option value="STF">STF</option>
+                                        <option value="AARSL">AARSL</option>
                                     </select>
-                                    <label for="floatingSelect">Country</label>
+                                    <label for="company_name">Company Select</label>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            
+
+                            <div class="col-lg-12">
                                 <div class="form-floating">
-                                    <input type="number" class="form-control" id="zipfloatingInput" placeholder="Enter your zipcode">
-                                    <label for="zipfloatingInput">Zipcode</label>
+                                    <select class="form-select" id="month" name="month" required>
+                                        <option selected>Choose...</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                    <label for="month">Month</label>
                                 </div>
                             </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <select class="form-select" name="year" required>
+                                        <option selected>Choose...</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                    </select>
+                                    <label for="year">Year</label>
+                                </div>
+                            </div>
+           
+
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="details" name="details" placeholder="Enter Details">
+                                    <label for="details">Details</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="total_sale" name="total_sale" placeholder="Enter total Sale" required>
+                                    <label for="total_sale">Total Sale</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="total_expenditure" name="total_expenditure" placeholder="Enter Total Expenditure">
+                                    <label for="total_expenditure">Total Expenditure</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="total_customer_due" name="total_customer_due" placeholder="Enter Total Customer Due">
+                                    <label for="total_customer_due">Total Customer Due</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="current_balance" name="current_balance" placeholder="Enter Current Balance">
+                                    <label for="current_balance">Current Balance</label>
+                                </div>
+                            </div>
+
+                          
                             <div class="col-lg-12">
                                 <div class="text-end">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
+                            
                         </div>
                     </form>
                 </div>

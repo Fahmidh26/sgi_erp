@@ -15,4 +15,8 @@ Route::view('profile', 'profile')
 
 Route::get('/dataentry', [SGIController::class, 'FormView'])->name('dataentry.add');
 
+Route::post('/dataentry/store', [SGIController::class, 'Formstore'])->name('dataentry.store');
+
+Route::get('/dataentry/manage', [SGIController::class, 'Formmanage'])->name('dataentry.manage');
+
 require __DIR__.'/auth.php';
