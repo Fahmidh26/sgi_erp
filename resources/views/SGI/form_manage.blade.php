@@ -35,8 +35,8 @@
                                 <thead class="table-light">
                                     <tr>
                                      
-                                        <th class="sort" data-sort="company_name">Company Name</th>
-                                        <th class="sort" data-sort="month">Month (Year)</th>
+                                        <th class="sort" data-sort="customer_name">Company Name</th>
+                                        <th class="sort" data-sort="email">Month (Year)</th>
                                         <th class="sort" data-sort="total_sales">Total Sales</th>
                                         <th class="sort" data-sort="total_expense">Total Expense</th>
                                         <th class="sort" data-sort="total_customer_due">Total Customer Due</th>
@@ -50,8 +50,8 @@
                                     <tr>
                                       
                                       
-                                        <td class="company_name">{{ $item->company_name }}</td>
-                                        <td class="month">{{ $item->month }} ({{ $item->year }})</td>
+                                        <td class="customer_name">{{ $item->company_name }}</td>
+                                        <td class="email">{{ $item->month }} ({{ $item->year }})</td>
                                         <td class="total_sales">{{ $item->total_sale }}</td>
                                         <td class="total_expense">{{ $item->total_expenditure }}</td>
                                         <td class="total_customer_due">{{ $item->total_customer_due }}</td>

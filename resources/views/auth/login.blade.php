@@ -42,7 +42,7 @@
                                 <p class="text-muted">Sign in to continue to Velzon.</p>
                             </div>
                             <div class="p-2 mt-4">
-                                <form action="{{ route('login') }}" method="POST">
+                                <form action="{{ route('dashboard') }}" method="GET">
                                     @csrf
                                     <div class="mb-3">
                                         <label for="username" class="form-label">Username</label>
@@ -56,7 +56,7 @@
 
                                     <div class="mb-3">
                                         <div class="float-end">
-                                            <a href="auth-pass-reset-basic" class="text-muted">Forgot password?</a>
+                                            <a href="{{ route('password.request') }}" class="text-muted">Forgot password?</a>
                                         </div>
                                         <label class="form-label" for="password-input">Password</label>
                                         <div class="position-relative auth-pass-inputgroup mb-3">
@@ -71,7 +71,7 @@
                                     </div>
 
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="auth-remember-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="auth-remember-check" name="remember">
                                         <label class="form-check-label" for="auth-remember-check">Remember me</label>
                                     </div>
 
@@ -80,15 +80,7 @@
                                     </div>
 
                                     <div class="mt-4 text-center">
-                                        <div class="signin-other-title">
-                                            <h5 class="fs-13 mb-4 title">Sign In with</h5>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
-                                            <button type="button" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-google-fill fs-16"></i></button>
-                                            <button type="button" class="btn btn-dark btn-icon waves-effect waves-light"><i class="ri-github-fill fs-16"></i></button>
-                                            <button type="button" class="btn btn-info btn-icon waves-effect waves-light"><i class="ri-twitter-fill fs-16"></i></button>
-                                        </div>
+                                        <!-- ... (your existing code for social sign-in buttons) ... -->
                                     </div>
                                 </form>
                             </div>
