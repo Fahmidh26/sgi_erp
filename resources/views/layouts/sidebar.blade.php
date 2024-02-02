@@ -33,19 +33,12 @@
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span >@lang('translation.menu')</span></li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
-                        aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="las la-tachometer-alt"></i> <span >@lang('translation.dashboards')</span>
+                    <a class="nav-link menu-link" href="{{route('dashboard')}}">
+                        <i class="las la-tachometer-alt"></i> <span >Dashboard</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="sidebarDashboards">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="dashboard-analytics" class="nav-link" >@lang('translation.analytics')</a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </li> <!-- end Dashboard Menu -->
+                </li>      
+
+
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarApps">

@@ -9,7 +9,7 @@ use Carbon\Carbon;
 
 class SGIController extends Controller
 {
-    public function FormView(){
+    public function FormAdd(){
 
     	return view('SGI.form_entry');
     }
@@ -47,6 +47,14 @@ class SGIController extends Controller
         // $admin = Auth::guard('admin')->user();
         $records = SGI::orderBy('id','DESC')->get();
 		return view('SGI.form_manage',compact('records'));
+
+    }
+
+    public function Formview ($id){
+
+        // $admin = Auth::guard('admin')->user();
+        $record = SGI::findOrFail($id);
+		return view('SGI.form_view',compact('record'));
 
     }
 

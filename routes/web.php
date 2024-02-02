@@ -26,10 +26,12 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::get('/dataentry', [SGIController::class, 'FormView'])->name('dataentry.add');
+Route::get('/dataentry', [SGIController::class, 'FormAdd'])->name('dataentry.add');
 
 Route::post('/dataentry/store', [SGIController::class, 'Formstore'])->name('dataentry.store');
 
 Route::get('/dataentry/manage', [SGIController::class, 'Formmanage'])->name('dataentry.manage');
+
+Route::get('/dataentry/view/{id}', [SGIController::class, 'Formview'])->name('dataentry.view');
 
 require __DIR__.'/auth.php';

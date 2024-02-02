@@ -37,10 +37,10 @@
                                      
                                         <th class="sort" data-sort="customer_name">Company Name</th>
                                         <th class="sort" data-sort="email">Month (Year)</th>
-                                        <th class="sort" data-sort="total_sales">Total Sales</th>
-                                        <th class="sort" data-sort="total_expense">Total Expense</th>
-                                        <th class="sort" data-sort="total_customer_due">Total Customer Due</th>
-                                        <th class="sort" data-sort="current_balance">Current Balance</th>
+                                        <th class="sort" data-sort="phone">Total Sales</th>
+                                        <th class="sort" data-sort="date">Total Expense</th>
+                                        <th class="sort" data-sort="status">Total Customer Due</th>
+                                        <th class="sort" data-sort="action">Current Balance</th>
                                         <th class="sort" data-sort="action">Action</th>
                                         
                                         </tr>
@@ -52,19 +52,20 @@
                                       
                                         <td class="customer_name">{{ $item->company_name }}</td>
                                         <td class="email">{{ $item->month }} ({{ $item->year }})</td>
-                                        <td class="total_sales">{{ $item->total_sale }}</td>
-                                        <td class="total_expense">{{ $item->total_expenditure }}</td>
-                                        <td class="total_customer_due">{{ $item->total_customer_due }}</td>
-                                        <td class="current_balance">{{ $item->current_balance }}</td>
+                                        <td class="phone">{{ $item->total_sale }}</td>
+                                        <td class="date">{{ $item->total_expenditure }}</td>
+                                        <td class="status">{{ $item->total_customer_due }}</td>
+                                        <td class="action">{{ $item->current_balance }}</td>
                                         <td>
                                             <div class="d-flex gap-2">
                                                 <div class="edit">
-                                                    <button class="btn btn-sm btn-success edit-item-btn"
-                                                    data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                                                    <a href="{{ route('dataentry.view',$item->id) }}" class="btn btn-sm btn-success edit-item-btn">View</a>
                                                 </div>
-                                                <div class="remove">
+                                                
+                                                
+                                                {{-- <div class="remove">
                                                     <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Remove</button>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </td>
                                     </tr>
