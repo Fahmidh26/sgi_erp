@@ -47,43 +47,16 @@
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('dataentry.add')}}" class="nav-link" >STATA Entry</a>
+                                <a href="{{route('dataentry.add')}}" class="nav-link" >Entry</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('dataentry.manage')}}" class="nav-link" >STATA Manage</a>
+                                <a href="{{route('dataentry.manage')}}" class="nav-link" >Manage</a>
                             </li>
                            
                      
-                            <li class="nav-item">
-                                <a href="#sidebarProjects" class="nav-link" data-bs-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="sidebarProjects" >@lang('translation.projects')
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarProjects">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="apps-projects-list" class="nav-link" >@lang('translation.list')</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="apps-projects-overview" class="nav-link" >@lang('translation.overview')</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="apps-projects-create" class="nav-link" >@lang('translation.create-project')</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                          
                         </ul>
                     </div>
-                </li>
-
-                <li class="menu-title"><i class="ri-more-fill"></i> <span >@lang('translation.components')</span></li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="widgets">
-                        <i class="las la-flask"></i> <span >@lang('translation.widgets')</span>
-                    </a>
-                </li>         
+                </li>  
 
             </ul>
         </div>

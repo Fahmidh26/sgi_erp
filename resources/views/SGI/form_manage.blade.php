@@ -2,16 +2,13 @@
 @section('title') SGI Data Manage @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Tables @endslot
-        @slot('title') Listjs @endslot
+        @slot('li_1') Data Entry @endslot
+        @slot('title') Records @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title mb-0">Add, Edit & Remove</h4>
-                </div><!-- end card header -->
-
+    
                 <div class="card-body">
                     <div id="customerList">
                         <div class="row g-4 mb-3">
@@ -122,7 +119,7 @@
                         <div class="col-lg-12">
                             <div class="form-floating">
                                 <select class="form-select" id="company_name" name="company_name" required>
-                                    <option selected>Choose...</option>
+                                    <option selected disabled>Choose...</option>
                                     <option value="STATA">STATA</option>
                                     <option value="STATA IT">STATA IT</option>
                                     <option value="STF">STF</option>
@@ -135,7 +132,7 @@
                         <div class="col-lg-12">
                             <div class="form-floating">
                                 <select class="form-select" id="month" name="month" required>
-                                    <option selected>Choose...</option>
+                                    <option selected disabled>Choose...</option>
                                     <option value="January">January</option>
                                     <option value="February">February</option>
                                     <option value="March">March</option>
@@ -156,7 +153,7 @@
                         <div class="col-lg-12">
                             <div class="form-floating">
                                 <select class="form-select" name="year" required>
-                                    <option selected>Choose...</option>
+                                    <option selected disabled>Choose...</option>
                                     <option value="2020">2020</option>
                                     <option value="2021">2021</option>
                                     <option value="2022">2022</option>
@@ -210,8 +207,7 @@
                     <div class="modal-footer">
                         <div class="hstack gap-2 justify-content-end">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-success" id="add-btn">Add Customer</button>
-                            <button type="button" class="btn btn-success" id="edit-btn">Update</button>
+                            <button type="submit" class="btn btn-success" id="add-btn">Add Entry</button>
                         </div>
                     </div>
                 </form>
