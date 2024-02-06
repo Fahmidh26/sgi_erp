@@ -25,9 +25,9 @@
                                 <div class="col-sm-8">
 
                                     <div class="p-3"> 
-                                        <p class="fs-20 lh-base"><span class="fw-semibold">Good Morning</span>,  {{Auth::user()->name}}!</p>
+                                        <p class="fs-20 lh-base"><span class="fw-semibold">As-Salaam-Alaikum</span>,  {{Auth::user()->name}}!</p>
 
-                                        <p class="fs-20 lh-base"><span class="fw-semibold">Welcome</span>, to ‘Syed Group of Industries’ <i class="mdi mdi-arrow-right"></i></p>
+                                        <p class="fs-20 lh-base"><span class="fw-semibold">Welcome</span>, to ‘Syed Group of Industries’ </p>
                                         <div class="mt-3">
                                             <a href="pages-pricing.html" class="btn btn-secondary">Visit Now!</a>
                                         </div>
